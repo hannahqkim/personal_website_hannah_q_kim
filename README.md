@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Hannah's Personal Website
 
 ## Project info
 
