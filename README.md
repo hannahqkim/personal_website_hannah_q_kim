@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/4c08ee49-084b-4bea-805e-65d8a78e0600
+**URL**: https://www.hannahqkim.com/
 
 ## What technologies are used for this project?
 
