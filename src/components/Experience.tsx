@@ -8,25 +8,21 @@ const Experience = () => {
       company: "Bank of America Network Automation & Analytics Team",
       location: "New York, NY",
       period: "Oct 2022 - Present",
-      description: "Internal Recommendation & Search System: Ask Network – (1) A 'Google' search for Splunk dashboards. NLP models use tokenization, embedding, and classification models, and returns a ranked list. (2) English to SQL conversion, leveraging Macros Classifier, Seq2Seq and Multi-head attention to apply the generated SQL commands on Splunk databases.",
+      description: "Skills: ",
       achievements: [
-        "Built internal recommendation & search system for Splunk dashboards",
-        "Developed English to SQL conversion using Seq2Seq and Multi-head attention",
-        "Implemented NLP models with tokenization, embedding, and classification"
+        "Internal Recommendation & Search System: Ask Network – (1) A “Google” search for Splunk dashboards. NLP models use tokenization, embedding, and classification models, and returns a ranked list. (2) English to SQL conversion, leveraging Macros Classifier, Seq2Seq and Multi-head attention to apply the generated SQL commands on Splunk databases.",
       ],
-      logo: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=64&h=64&fit=crop&crop=center"
+      logo: "company-logos/Bank_of_America_Logo.png"
     },
     {
       title: "Part-Time ML/Data Science Consultant",
-      company: "Health Tech/Biotech",
+      company: "Health Tech/Biotech Labs",
       location: "Remote",
       period: "Mar 2024 - Dec 2024",
-      description: "Stealth mode startup - Health Tech, Pre-seed & Sonder Research X - Cornell University Lab: Established LLM evaluation standards, implemented ROUGE scores, adopted hallucination detection models, and built image cleaning data pipelines for microscopy images.",
+      description: "Skills: LLMs/LLM Evals, Data Visualization, Data Engineering, Computer Vision/Image Processing",
       achievements: [
-        "Established LLM evaluation standards for chatbot outputs using ROUGE scores",
-        "Implemented Patronus AI's Lynx model for hallucination detection",
-        "Trained BERT model for insurance claim denial prediction",
-        "Built image cleaning pipelines reducing manual data entry work"
+        "Stealth mode startup - Health Tech, Pre-seed (Jun 2024 - Dec 2024) -- Established LLM evaluation standards, implemented ROUGE scores, adopted hallucination detection models, and built image cleaning data pipelines for microscopy images.", 
+        "Sonder Research X - Cornell University Lab (Mar 2024 - May 2024): Built image cleaning data pipelines that extracted target areas of a microscopy image of a proprietary chip for cancer detection and chips that simulates the human eye which reduced manual data entry work by the scientists and efficiently pushed data into the multi-class classification computer vision model (ResNet-18)"
       ],
       logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=64&h=64&fit=crop&crop=center"
     },
@@ -41,7 +37,7 @@ const Experience = () => {
         "Maintained 100% recall while maximizing precision",
         "Increased explainability of convolutional features using activation forward hooks"
       ],
-      logo: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=64&h=64&fit=crop&crop=center"
+      logo: "company-logos/Tempus_Logo.png"
     },
     {
       title: "Graduate Research Assistant",
@@ -54,7 +50,7 @@ const Experience = () => {
         "Found significant area & perimeter differences between normal vs. tumor samples",
         "Achieved Wasserstein distance >1 in statistical analysis"
       ],
-      logo: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=64&h=64&fit=crop&crop=center"
+      logo: "company-logos/New_York_University_Logo.png"
     },
     {
       title: "Undergraduate Research Assistant",
@@ -67,7 +63,7 @@ const Experience = () => {
         "Predicted lizard age & mutation of world's first CRISPR lizards (97% accuracy)",
         "Published 3 papers and was featured in The New York Times"
       ],
-      logo: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=64&h=64&fit=crop&crop=center"
+      logo: "company-logos/Unversity_of_Georgia_logo.png"
     }
   ];
 

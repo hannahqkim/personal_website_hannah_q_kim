@@ -1,4 +1,3 @@
-
 import { Home, Briefcase, User, Mail, Github, Linkedin, Twitter, Instagram, Archive } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ const Sidebar = () => {
       {/* Profile Section */}
       <div className="p-6 border-b border-sidebar-border">
         <img 
-          src="/lovable-uploads/91097503-d60d-4a06-921e-9c88d99a67f5.png" 
+          src="/lovable-uploads/0O6A4999_s.jpg" 
           alt="Hannah Kim"
           className="w-12 h-12 rounded-full mb-3"
         />

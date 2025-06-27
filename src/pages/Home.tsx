@@ -1,4 +1,3 @@
-
 import { Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -9,8 +8,8 @@ const Home = () => {
         <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
           Hey, I'm Hannah
         </h1>
-        <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8">
-          ML/Data Engineer
+        <h2 className="text-2xl md:text-3xl text-muted-foreground mb-2">
+          ML/Data Engineer @ Bank of America
         </h2>
         
         <div className="mb-8">
@@ -23,7 +22,7 @@ const Home = () => {
             machine learning and data engineering best practices.
           </p>
           <p className="text-foreground/70">
-            My Go-to stack is <strong>Python, TensorFlow, PyTorch, Apache Spark, AWS, Docker, 
+            My Go-to stack is <strong>Python, PyTorch, AWS, Docker, 
             PostgreSQL, React, and Tailwind CSS</strong>.
           </p>
         </div>
@@ -34,7 +33,7 @@ const Home = () => {
           </p>
           <p className="text-foreground/70 mb-2">Say a Hi on LinkedIn</p>
           <p className="text-foreground/70">
-            Email me at <strong>kimhannah321@gmail.com</strong>
+            Email me at <strong>[lastname][firstname]321@gmail.com</strong>
           </p>
         </div>
 
@@ -45,14 +44,6 @@ const Home = () => {
           >
             <Download className="w-4 h-4 mr-2" />
             Resume
-          </Button>
-          <Button 
-            variant="outline" 
-            className="border-border text-foreground hover:bg-accent"
-            onClick={() => window.open('mailto:kimhannah321@gmail.com', '_blank')}
-          >
-            <Mail className="w-4 h-4 mr-2" />
-            E-Mail
           </Button>
         </div>
       </div>
