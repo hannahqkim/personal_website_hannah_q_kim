@@ -1,103 +1,87 @@
 
-import { ExternalLink, Github, BarChart3, Brain, Database } from 'lucide-react';
+import { ExternalLink, Github, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const Projects = () => {
   const projects = [
     {
-      title: "Real-time Fraud Detection System",
-      description: "Built an ML pipeline that processes 10M+ transactions daily with 99.7% accuracy using ensemble methods and real-time feature engineering.",
-      tech: ["Python", "Apache Kafka", "TensorFlow", "Redis", "AWS"],
-      metrics: ["99.7% Accuracy", "< 100ms Latency", "10M+ Daily Transactions"],
-      icon: <Brain className="w-6 h-6" />,
-      github: "https://github.com",
-      live: "https://demo.example.com",
-      color: "border-l-purple-500"
+      title: "Partygraph",
+      date: "May 2025",
+      description: "Meta Llama 4 Hackathon Top 6 Finalist: AI/backend lead - a graph-based event discovery platform using LLaMA 4 to semantically parse text/images into structured event data and contextual tags - integrating natural language queries and visual graph navigation to connect users with events by \"vibe\" and interest, enhancing access to niche communities often missed by traditional platforms.",
+      github: "https://github.com/tinglu12/partygraph-front",
+      tech: ["LLaMA 4", "Graph Databases", "NLP", "React", "Python"]
     },
     {
-      title: "Customer Analytics Data Platform",
-      description: "Designed and implemented a scalable data platform processing customer behavior data from multiple sources with automated ML insights.",
-      tech: ["Apache Spark", "Airflow", "PostgreSQL", "Docker", "Kubernetes"],
-      metrics: ["500GB+ Daily Processing", "15 Data Sources", "Real-time Dashboards"],
-      icon: <Database className="w-6 h-6" />,
-      github: "https://github.com",
-      live: "https://analytics.example.com",
-      color: "border-l-blue-500"
+      title: "Grammarly4SMILES",
+      date: "Jan 2023", 
+      description: "Schrodinger Hackathon Best Developer Tool Award: Science and backend lead – created a molecule validation chatbox using RDKit that provided information about properties of a valid molecule when inputting a SMILES string.",
+      github: "https://github.com/hannahqkim/hacking-the-gender-stack-green",
+      tech: ["RDKit", "Python", "Molecular Chemistry", "API Development"]
     },
     {
-      title: "Predictive Maintenance ML Model",
-      description: "Developed time-series forecasting models for industrial equipment, reducing maintenance costs by 35% through predictive analytics.",
-      tech: ["PyTorch", "MLflow", "Pandas", "Plotly", "FastAPI"],
-      metrics: ["35% Cost Reduction", "92% Prediction Accuracy", "200+ Sensors"],
-      icon: <BarChart3 className="w-6 h-6" />,
-      github: "https://github.com",
-      live: "https://maintenance.example.com",
-      color: "border-l-green-500"
+      title: "Image Captioning Model from Scratch",
+      date: "Nov 2021",
+      description: "Recreated various multi-modal learning models with encoder-decoder architectures where CNNs are the encoder, and the RNNs are the decoder. BLEU scores: B1 scores came out in the 40s, B2 came out in the mid 20s, and B3 was around 6-8 – where adding an attention layer and multiple LSTM layers increased performance.",
+      github: "https://drive.google.com/file/d/1XwWzviK4RR9Bpc_FtyrnFjab4JIYpQD6/view?usp=sharing",
+      tech: ["CNN", "RNN", "LSTM", "Attention Mechanisms", "PyTorch", "Computer Vision"]
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-          <p className="text-xl text-gray-600">Real-world applications of ML and data engineering</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
+          <p className="text-xl text-muted-foreground">Real-world applications of ML and data engineering</p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="space-y-6">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className={`hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 ${project.color} animate-fade-in`}
+              className="hover:shadow-lg transition-all duration-300 bg-card border-border animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="p-2 bg-gray-100 rounded-lg">
-                    {project.icon}
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-2">
+                      <CardTitle className="text-2xl text-card-foreground">{project.title}</CardTitle>
+                      <div className="flex items-center text-muted-foreground text-sm">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {project.date}
+                      </div>
+                    </div>
+                    <CardDescription className="text-card-foreground/70 leading-relaxed text-base">
+                      {project.description}
+                    </CardDescription>
                   </div>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  
+                  <div className="flex gap-3 flex-shrink-0">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="border-border hover:bg-accent"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
+                      <Github className="w-4 h-4 mr-1" />
+                      {project.github.includes('drive.google.com') ? 'View' : 'Code'}
+                    </Button>
+                  </div>
                 </div>
-                <CardDescription className="text-gray-600 leading-relaxed">
-                  {project.description}
-                </CardDescription>
               </CardHeader>
               
               <CardContent>
-                <div className="mb-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">Key Metrics</h4>
-                  <div className="grid grid-cols-1 gap-2">
-                    {project.metrics.map((metric) => (
-                      <div key={metric} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
-                        {metric}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <span 
-                        key={tech}
-                        className="px-2 py-1 bg-gray-200 text-gray-700 rounded text-xs"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="flex-1">
-                    <Github className="w-4 h-4 mr-1" />
-                    Code
-                  </Button>
-                  <Button size="sm" className="flex-1 bg-blue-600 hover:bg-blue-700">
-                    <ExternalLink className="w-4 h-4 mr-1" />
-                    Demo
-                  </Button>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <span 
+                      key={tech}
+                      className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </CardContent>
             </Card>
