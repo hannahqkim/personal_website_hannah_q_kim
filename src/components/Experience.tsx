@@ -76,7 +76,7 @@ const Experience = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">Professional Experience</h2>
-          <p className="text-xl text-muted-foreground">Building data-driven solutions across industries</p>
+          <p className="text-xl text-muted-foreground">Building data-driven solutions across financial services & healthcare industries</p>
         </div>
         
         <div className="relative">
