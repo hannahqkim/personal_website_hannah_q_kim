@@ -26,7 +26,7 @@ const Sidebar = () => {
           className="w-12 h-12 rounded-full mb-3"
         />
         <h2 className="font-semibold text-sidebar-foreground">Hannah</h2>
-        <p className="text-sm text-sidebar-foreground/70">ML/Data Engineer</p>
+        <p className="text-sm text-sidebar-foreground/70">ML Engineer/Data Engineer</p>
       </div>
 
       {/* Navigation */}
