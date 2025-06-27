@@ -14,8 +14,8 @@ const Contact = () => {
     },
     {
       name: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      href: "https://linkedin.com/in/yourprofile",
+      value: "linkedin.com/in/hannahqkim",
+      href: "https://www.linkedin.com/in/hannahqkim/",
       icon: <Linkedin className="w-5 h-5" />,
       color: "bg-blue-50 text-blue-600 border-blue-200"
     },
