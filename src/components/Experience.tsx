@@ -4,43 +4,70 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior ML Engineer",
-      company: "TechCorp Inc.",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Lead machine learning initiatives for fraud detection and customer analytics. Built scalable ML pipelines processing millions of transactions daily.",
+      title: "Data Engineer II (NLP Engineer)",
+      company: "Bank of America Network Automation & Analytics Team",
+      location: "New York, NY",
+      period: "Oct 2022 - Present",
+      description: "Internal Recommendation & Search System: Ask Network – (1) A 'Google' search for Splunk dashboards. NLP models use tokenization, embedding, and classification models, and returns a ranked list. (2) English to SQL conversion, leveraging Macros Classifier, Seq2Seq and Multi-head attention to apply the generated SQL commands on Splunk databases.",
       achievements: [
-        "Reduced fraud losses by 40% through advanced ML models",
-        "Scaled ML infrastructure to handle 10x traffic growth",
-        "Mentored team of 5 junior engineers"
+        "Built internal recommendation & search system for Splunk dashboards",
+        "Developed English to SQL conversion using Seq2Seq and Multi-head attention",
+        "Implemented NLP models with tokenization, embedding, and classification"
       ],
-      logo: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=64&h=64&fit=crop&crop=center" // Tech company placeholder
+      logo: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=64&h=64&fit=crop&crop=center"
     },
     {
-      title: "Data Engineer",
-      company: "DataFlow Solutions",
-      location: "Austin, TX",
-      period: "2020 - 2022",
-      description: "Designed and implemented data pipelines and ETL processes for large-scale analytics platforms serving enterprise clients.",
-      achievements: [
-        "Built real-time data pipelines processing 1TB+ daily",
-        "Improved data quality and reduced processing time by 60%",
-        "Implemented automated monitoring and alerting systems"
-      ],
-      logo: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=64&h=64&fit=crop&crop=center" // Data/analytics placeholder
-    },
-    {
-      title: "Data Scientist",
-      company: "Analytics Pro",
+      title: "Part-Time ML/Data Science Consultant",
+      company: "Health Tech/Biotech",
       location: "Remote",
-      period: "2019 - 2020",
-      description: "Developed predictive models and data-driven insights for retail and e-commerce clients. Specialized in customer behavior analysis.",
+      period: "Mar 2024 - Dec 2024",
+      description: "Stealth mode startup - Health Tech, Pre-seed & Sonder Research X - Cornell University Lab: Established LLM evaluation standards, implemented ROUGE scores, adopted hallucination detection models, and built image cleaning data pipelines for microscopy images.",
       achievements: [
-        "Increased customer retention by 25% through predictive modeling",
-        "Deployed 15+ ML models to production",
-        "Created automated reporting dashboards"
+        "Established LLM evaluation standards for chatbot outputs using ROUGE scores",
+        "Implemented Patronus AI's Lynx model for hallucination detection",
+        "Trained BERT model for insurance claim denial prediction",
+        "Built image cleaning pipelines reducing manual data entry work"
       ],
-      logo: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=64&h=64&fit=crop&crop=center" // Analytics placeholder
+      logo: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=64&h=64&fit=crop&crop=center"
+    },
+    {
+      title: "Machine Learning Scientist Summer Associate",
+      company: "Tempus AI Pathology Imaging Team (former Google Brain Team)",
+      location: "Redwood City, CA",
+      period: "Jul 2022 – Sep 2022",
+      description: "De-identified patient health information from histopathological images; Trained a binary classifier CNN to make sure there is 100% recall while maximizing precision. Results showed a 15x increase in precision compared to the original PHI detection model.",
+      achievements: [
+        "Achieved 15x increase in precision for PHI detection model",
+        "Maintained 100% recall while maximizing precision",
+        "Increased explainability of convolutional features using activation forward hooks"
+      ],
+      logo: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=64&h=64&fit=crop&crop=center"
+    },
+    {
+      title: "Graduate Research Assistant",
+      company: "New York University Dept. of Systems Biology",
+      location: "New York, NY",
+      period: "May 2021 – Sep 2022",
+      description: "Utilized HPC clusters to run novel CNN (UNET+cell type classifier) to analyze pancreatic cancer histological images; Studied how pressure affects malignant pancreatic cancer cell growth and its correlation to downstream/upstream genetic pathways.",
+      achievements: [
+        "Developed novel CNN (UNET+cell type classifier) for cancer analysis",
+        "Found significant area & perimeter differences between normal vs. tumor samples",
+        "Achieved Wasserstein distance >1 in statistical analysis"
+      ],
+      logo: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=64&h=64&fit=crop&crop=center"
+    },
+    {
+      title: "Undergraduate Research Assistant",
+      company: "University of Georgia Dept. of Neurobiology",
+      location: "Athens, GA", 
+      period: "Oct 2017 – May 2021",
+      description: "Produced an image analysis pipeline to quantify cells in more than 400k retinal histo- and immunohisto- images of various aged lizards to study biophysical mechanisms that played a role in foveal formation in the retina.",
+      achievements: [
+        "Analyzed 400k+ retinal histological and immunohistological images",
+        "Predicted lizard age & mutation of world's first CRISPR lizards (97% accuracy)",
+        "Published 3 papers and was featured in The New York Times"
+      ],
+      logo: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=64&h=64&fit=crop&crop=center"
     }
   ];
 
