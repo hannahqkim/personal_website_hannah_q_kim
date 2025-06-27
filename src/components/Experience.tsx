@@ -8,9 +8,10 @@ const Experience = () => {
       company: "Bank of America Network Automation & Analytics Team",
       location: "New York, NY",
       period: "Oct 2022 - Present",
-      description: "Skills: ",
+      description: "Skills: NLP, Search Systems, Databases, Model Deployement, Internal Tools",
       achievements: [
         "Internal Recommendation & Search System: Ask Network – (1) A “Google” search for Splunk dashboards. NLP models use tokenization, embedding, and classification models, and returns a ranked list. (2) English to SQL conversion, leveraging Macros Classifier, Seq2Seq and Multi-head attention to apply the generated SQL commands on Splunk databases.",
+        "Led the creation of a data architecture blueprint, streamlining data management and supporting automation initiatives across the bank's Core Technology Infrastructure's Network Services."
       ],
       logo: "company-logos/Bank_of_America_Logo.png"
     },
@@ -31,8 +32,9 @@ const Experience = () => {
       company: "Tempus AI Pathology Imaging Team (former Google Brain Team)",
       location: "Redwood City, CA",
       period: "Jul 2022 – Sep 2022",
-      description: "De-identified patient health information from histopathological images; Trained a binary classifier CNN to make sure there is 100% recall while maximizing precision. Results showed a 15x increase in precision compared to the original PHI detection model.",
+      description: "Skills: PHIs(Patient Health Information), Model evaluation, Explainability",
       achievements: [
+        "De-identified patient health information from histopathological images", 
         "Achieved 15x increase in precision for PHI detection model",
         "Maintained 100% recall while maximizing precision",
         "Increased explainability of convolutional features using activation forward hooks"
@@ -44,8 +46,9 @@ const Experience = () => {
       company: "New York University Dept. of Systems Biology",
       location: "New York, NY",
       period: "May 2021 – Sep 2022",
-      description: "Utilized HPC clusters to run novel CNN (UNET+cell type classifier) to analyze pancreatic cancer histological images; Studied how pressure affects malignant pancreatic cancer cell growth and its correlation to downstream/upstream genetic pathways.",
+      description: "Skills: HPC, Slurm, Scientific Computing, Bioinformatics",
       achievements: [
+        "Studied how pressure affects malignant pancreatic cancer cell growth and its correlation to downstream/upstream genetic pathways.", 
         "Developed novel CNN (UNET+cell type classifier) for cancer analysis",
         "Found significant area & perimeter differences between normal vs. tumor samples",
         "Achieved Wasserstein distance >1 in statistical analysis"
@@ -57,8 +60,9 @@ const Experience = () => {
       company: "University of Georgia Dept. of Neurobiology",
       location: "Athens, GA", 
       period: "Oct 2017 – May 2021",
-      description: "Produced an image analysis pipeline to quantify cells in more than 400k retinal histo- and immunohisto- images of various aged lizards to study biophysical mechanisms that played a role in foveal formation in the retina.",
+      description: "Skills: Image Processing, Publication-Ready Figure Building, Data Engineerings",
       achievements: [
+        "Studied biophysical mechanisms that played a role in foveal formation in the retina.", 
         "Analyzed 400k+ retinal histological and immunohistological images",
         "Predicted lizard age & mutation of world's first CRISPR lizards (97% accuracy)",
         "Published 3 papers and was featured in The New York Times"
