@@ -1,5 +1,6 @@
 import { Home, Briefcase, User, Mail, Github, Linkedin, Twitter, Instagram, Archive } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import { useTypedText } from '../hooks/useTypedText';
 
 const Sidebar = () => {
   const navigationItems = [
@@ -16,6 +17,16 @@ const Sidebar = () => {
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/han.q.kim' }
   ];
 
+  const jobTitles = [
+    "ML Engineer",
+    "AI Engineer",
+    "Data Engineer",
+    "Data Scientist",
+    "Research Engineer",
+    "Software Engineer"
+  ];
+  const typedText = useTypedText(jobTitles, 80, 1200);
+
   return (
     <div className="fixed left-0 top-0 h-full w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Profile Section */}
@@ -26,7 +37,10 @@ const Sidebar = () => {
           className="w-12 h-12 rounded-full mb-3"
         />
         <h2 className="font-semibold text-sidebar-foreground">Hannah</h2>
-        <p className="text-sm text-sidebar-foreground/70">ML Engineer/Data Engineer</p>
+        <p className="text-sm text-sidebar-foreground/70 h-5">
+          {typedText}
+          <span className="animate-pulse">|</span>
+        </p>
       </div>
 
       {/* Navigation */}
