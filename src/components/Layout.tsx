@@ -6,11 +6,14 @@ const Layout = () => {
   return (
     <SidebarProvider>
       <div className="min-h-screen bg-background flex">
-        {/* Sidebar toggle button for mobile */}
-        <div className="md:hidden fixed top-4 left-4 z-50">
-          <SidebarTrigger />
+        <div className="relative">
+          <Sidebar />
+          {/* Sidebar toggle button at the upper right of the sidebar, always visible */}
+          <div className="absolute top-4 right-4 z-50">
+            <SidebarTrigger />
+          </div>
+
         </div>
-        <Sidebar />
         <main className="flex-1 md:ml-64">
           <Outlet />
         </main>
