@@ -11,7 +11,7 @@ const Layout = () => {
           <SidebarTrigger />
         </div>
         <Sidebar />
-        <main className="flex-1 md:ml-64">
+        <main className="ml-14 md:ml-64">
           <Outlet />
         </main>
       </div>
