@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import { SidebarProvider, SidebarTrigger } from './ui/sidebar';
+import AboutPage from '../pages/AboutPage';
 
 const Layout = () => {
   return (

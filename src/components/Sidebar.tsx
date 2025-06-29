@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Briefcase, User, Mail, Github, Linkedin, Twitter, Instagram, Archive, X, PanelLeft } from 'lucide-react';
+import { Home, Briefcase, User, Mail, Github, Linkedin, Twitter, Instagram, Archive, X, PanelLeft, Info } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { useTypedText } from '../hooks/useTypedText';
 
@@ -10,6 +10,7 @@ const Sidebar = () => {
     { name: 'Home', icon: Home, path: '/' },
     { name: 'Projects', icon: Briefcase, path: '/projects' },
     { name: 'Experience', icon: User, path: '/experience' },
+    { name: 'About', icon: Info, path: '/about' },
     { name: 'Archive', icon: Archive, path: '/archive' }
   ];
 
