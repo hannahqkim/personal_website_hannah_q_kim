@@ -40,7 +40,7 @@ const Home = () => {
         <div className="flex gap-4">
           <Button 
             className="bg-white text-black border border-gray-300 px-8 py-3 rounded-full font-bold shadow-md transition-all duration-200 transform hover:bg-black hover:text-white hover:border-black focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
-            onClick={() => window.open('https://drive.google.com/file/d/1dQ4jBEKX1V4IXzc0vDtUk85j8YUddDqi/view?usp=sharing', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1SPGpyOtsuTz4ElJAPL_Yvb-sYUEg7Tp6/view?usp=sharing', '_blank')}
           >
             <Download className="w-5 h-5 mr-2" />
             Resume
