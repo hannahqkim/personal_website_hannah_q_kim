@@ -9,7 +9,7 @@ const Home = () => {
           Hey, I'm Hannah
         </h1>
         <h2 className="text-2xl md:text-3xl text-muted-foreground mb-2">
-          ML/Data Engineer @ Bank of America
+          ML/Data Scientist @ Bank of America
         </h2>
         
         <div className="mb-8">
