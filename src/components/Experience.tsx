@@ -4,10 +4,24 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Engineer II (NLP Engineer)",
+      title: "Data/Machine Learning Scientist (NLP)",
+      company: "Bank of America Enterprise Credit AI and Innovation Team",
+      location: "New York, NY",
+      period: "Oct 2025 - Present",
+      description: "Built and scaled enterprise NLP and GenAI systems for credit analyst workflows under strict governance constraints.",
+      achievements: [
+        "Enterprise RAG System: AskCredit - Built a production retrieval-augmented generation system on Orchestra for 3,000+ credit users to semantically search policy documents. Designed end-to-end pipelines across SQL ingestion, LangChain chunking, text-embedding-3-large embeddings, cosine retrieval with MMR reranking, and GPT-4o/Llama answer generation with source citations.",
+        "AI-Driven CAM Generation System - Architected an LLM-powered Credit Approval Memo (CAM) drafting system by combining structured financial systems (Moody's, CreditCenter, PowerCurve) with unstructured document RAG. Built hybrid validation workflows to maintain zero hallucinated financial outputs and full auditability.",
+        "Full Text Search Platform - Developed a production-grade Apache Solr search system across millions of credit documents, replacing manual workflows with scalable metadata filtering and high-recall document retrieval.",
+        "Cross-functional AI Leadership - Led alignment across business, data, and platform teams to productionize AI systems within enterprise governance requirements, including PII handling, on-prem infrastructure, and model approval processes."
+      ],
+      logo: "company-logos/Bank_of_America_Logo.png"
+    },
+    {
+      title: "Data/Machine Learning Engineer II (NLP)",
       company: "Bank of America Network Automation & Analytics Team",
       location: "New York, NY",
-      period: "Oct 2022 - Present",
+      period: "Oct 2022 - Oct 2025",
       description: "Skills: NLP, Search Systems, Databases, Model Deployement, Internal Tools",
       achievements: [
         "Internal Recommendation & Search System: Ask Network – (1) A “Google” search for Splunk dashboards. NLP models use tokenization, embedding, and classification models, and returns a ranked list. (2) English to SQL conversion, leveraging Macros Classifier, Seq2Seq and Multi-head attention to apply the generated SQL commands on Splunk databases.",
